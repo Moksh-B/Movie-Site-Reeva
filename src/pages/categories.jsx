@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
-import { CategoryCard } from "../components/CategoryCard"
+import { CategoryCard } from "../components/categoryCard.jsx"
+
 
 const categories = [
     { code: 28, category: "Action", image: "src/assets/action.avif", icon: "🔥" },
@@ -24,11 +25,11 @@ export function Categories() {
 const darkTheme = useSelector((state)=> state.theme)
 
     return (
-        <section className={`mx-auto max-w-7xl px-6 pt-30 pb-5 ${darkTheme? 'text-white':'text-black'}`}>
+        <section
+            className={`mx-auto max-w-7xl px-6 pt-30 pb-5 ${darkTheme ? "text-white" : "text-black"}`}
+        >
             <div className="mb-14">
-                <h1 className="text-5xl font-black">
-                    Browse Categories
-                </h1>
+                <h1 className="text-5xl font-black">Browse Categories</h1>
 
                 <p className="mt-4 max-w-2xl text-lg text-zinc-400">
                     Discover movies from every genre. Choose a category and
@@ -41,8 +42,6 @@ const darkTheme = useSelector((state)=> state.theme)
                     <CategoryCard key={category.code} category={category} />
                 ))}
             </div>
-
-            
         </section>
     )
 }
