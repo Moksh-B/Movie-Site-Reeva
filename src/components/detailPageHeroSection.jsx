@@ -8,6 +8,7 @@ import { VideoModal } from "./videoModal"
 export function DetailPageHeroSection({ movieData, movieVideos }) {
     const dispatch = useDispatch()
     const [isOpen, setIsOpen] = useState(false)
+    console.log(isOpen)
 
     const trailer =
         movieVideos?.results?.find(
