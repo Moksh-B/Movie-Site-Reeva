@@ -33,7 +33,12 @@ const categories = [
     { code: 10402, category: "Music", image: music, icon: "🎵" },
     { code: 9648, category: "Mystery", image: mystery, icon: "🔍" },
     { code: 10749, category: "Romance", image: romance, icon: "❤️" },
-    { code: 878, category: "Science Fiction", image: scienceFiction, icon: "🚀", },
+    {
+        code: 878,
+        category: "Science Fiction",
+        image: scienceFiction,
+        icon: "🚀",
+    },
     { code: 53, category: "Thriller", image: thriller, icon: "🔪" },
     { code: 10752, category: "War", image: war, icon: "⚔️" },
 ]
