@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { MovieCard } from "../components/movieCard"
 
-export function Watchlist() {
+export default function Watchlist() {
     const movies = useSelector((state) => state.watchlist)
     const darkTheme = useSelector((state) => state.theme)
 

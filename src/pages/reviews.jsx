@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { useGetMovieReviewsQuery } from "../features/movieAPI"
 import { ReviewCard } from "../components/reviewCard"
 
-export function Reviews() {
+export default function Reviews() {
     const { id } = useParams()
     const { data: movieReviews } = useGetMovieReviewsQuery(id)
     const [expandedId, setExpandedId] = useState(null)

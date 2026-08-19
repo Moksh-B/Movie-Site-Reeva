@@ -42,7 +42,7 @@ const categories = [
     { code: 53, category: "Thriller", image: thriller, icon: "🔪" },
     { code: 10752, category: "War", image: war, icon: "⚔️" },
 ]
-export function Categories() {
+export default function Categories() {
     const darkTheme = useSelector((state) => state.theme)
 
     return (

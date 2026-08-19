@@ -6,7 +6,7 @@ import { PageChangingButtons } from "../components/pageChangingButtons"
 import { MovieCardSkeleton } from "../skeletons/movieCardSkeleton"
 import { useSelector } from "react-redux"
 
-export function Category() {
+export default function Category() {
     const darkTheme = useSelector((state)=> state.theme)
 
     const { code } = useParams()

@@ -5,7 +5,7 @@ import { MovieCard } from "../components/movieCard"
 import { useSearchParams } from "react-router-dom"
 import { useSelector } from "react-redux"
 
-export function Search() {
+export default function Search() {
      const darkTheme = useSelector((state) => state.theme)
    const [searchParams, setSearchParams] = useSearchParams()
 

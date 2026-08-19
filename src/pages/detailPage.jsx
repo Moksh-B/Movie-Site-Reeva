@@ -23,7 +23,7 @@ import { VideoCardSkeleton } from "../skeletons/videoCardSkeleton"
 import { DetailPageHeroSkeleton } from "../skeletons/detailPageHeroSkeleton"
 import { DetailPageHeroSection } from "../components/detailPageHeroSection"
 
-export function DetailPage() {
+export default function DetailPage() {
     const { id } = useParams()
 
     const { data: movieData, isLoading: movieDataLoading } =

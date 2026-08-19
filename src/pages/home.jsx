@@ -9,7 +9,7 @@ import {
 } from "../features/movieAPI"
 import { useSelector } from "react-redux"
 
-export function Home() {
+export default function Home() {
 const darkTheme = useSelector((state) => state.theme)
 
     const popularMovies = useGetPopularMoviesQuery()
