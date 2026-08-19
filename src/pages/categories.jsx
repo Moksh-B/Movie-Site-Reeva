@@ -9,7 +9,7 @@ const categories = [
     { code: 35, category: "Comedy", image: "src/assets/comedy.jpg", icon: "😂" },
     { code: 80, category: "Crime", image: "src/assets/crime.avif", icon: "🕵️" },
     { code: 99, category: "Documentary", image: "src/assets/documentry.avif", icon: "🎥" },
-    { code: 18, category: "Drama", image: "src/assets/drama.avif", icon: "🎭" },
+    { code: 18, category: "Drama", image: "../assets/drama.avif", icon: "🎭" },
     { code: 10751, category: "Family", image: "src/assets/family.avif", icon: "👨‍👩‍👧" },
     { code: 14, category: "Fantasy", image: "src/assets/fantacy.jpg", icon: "🧙" },
     { code: 36, category: "History", image: "src/assets/history.avif", icon: "🏛️" },
