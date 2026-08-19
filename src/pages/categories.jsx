@@ -1,28 +1,44 @@
 import { useSelector } from "react-redux"
 import { CategoryCard } from "../components/categoryCard.jsx"
-
+import action from "../assets/action.avif"
+import adventure from "../assets/adventure.avif"
+import animation from "../assets/animation2.jpg"
+import comedy from "../assets/comedy.jpg"
+import crime from "../assets/crime.avif"
+import documentary from "../assets/documentry.avif"
+import drama from "../assets/drama.avif"
+import family from "../assets/family.avif"
+import fantasy from "../assets/fantacy.jpg"
+import history from "../assets/history.avif"
+import horror from "../assets/horror.jpg"
+import music from "../assets/music.jpg"
+import mystery from "../assets/mystery.avif"
+import romance from "../assets/romance.avif"
+import scienceFiction from "../assets/science-fiction.avif"
+import thriller from "../assets/thriller.webp"
+import war from "../assets/war.jpg"
 
 const categories = [
-    { code: 28, category: "Action", image: "src/assets/action.avif", icon: "🔥" },
-    { code: 12, category: "Adventure", image: "src/assets/adventure.avif", icon: "🗺️" },
-    { code: 16, category: "Animation", image: "src/assets/animation2.jpg", icon: "🎨" },
-    { code: 35, category: "Comedy", image: "src/assets/comedy.jpg", icon: "😂" },
-    { code: 80, category: "Crime", image: "src/assets/crime.avif", icon: "🕵️" },
-    { code: 99, category: "Documentary", image: "src/assets/documentry.avif", icon: "🎥" },
-    { code: 18, category: "Drama", image: "../assets/drama.avif", icon: "🎭" },
-    { code: 10751, category: "Family", image: "src/assets/family.avif", icon: "👨‍👩‍👧" },
-    { code: 14, category: "Fantasy", image: "src/assets/fantacy.jpg", icon: "🧙" },
-    { code: 36, category: "History", image: "src/assets/history.avif", icon: "🏛️" },
-    { code: 27, category: "Horror", image: "src/assets/horror.jpg", icon: "👻" },
-    { code: 10402, category: "Music", image: "src/assets/music.jpg", icon: "🎵" },
-    { code: 9648, category: "Mystery", image: "src/assets/mystery.avif", icon: "🔍" },
-    { code: 10749, category: "Romance", image: "src/assets/romance.avif", icon: "❤️" },
-    { code: 878, category: "Science Fiction", image: "src/assets/science-fiction.avif", icon: "🚀" },
-    { code: 53, category: "Thriller", image: "src/assets/thriller.webp", icon: "🔪" },
-    { code: 10752, category: "War", image: "src/assets/war.jpg", icon: "⚔️" },
+    { code: 28, category: "Action", image: action, icon: "🔥" },
+    { code: 12, category: "Adventure", image: adventure, icon: "🗺️" },
+    { code: 16, category: "Animation", image: animation, icon: "🎨" },
+    { code: 35, category: "Comedy", image: comedy, icon: "😂" },
+    { code: 80, category: "Crime", image: crime, icon: "🕵️" },
+    { code: 99, category: "Documentary", image: documentary, icon: "🎥" },
+    { code: 18, category: "Drama", image: drama, icon: "🎭" },
+    { code: 10751, category: "Family", image: family, icon: "👨‍👩‍👧" },
+    { code: 14, category: "Fantasy", image: fantasy, icon: "🧙" },
+    { code: 36, category: "History", image: history, icon: "🏛️" },
+    { code: 27, category: "Horror", image: horror, icon: "👻" },
+    { code: 10402, category: "Music", image: music, icon: "🎵" },
+    { code: 9648, category: "Mystery", image: mystery, icon: "🔍" },
+    { code: 10749, category: "Romance", image: romance, icon: "❤️" },
+    { code: 878, category: "Science Fiction", image: scienceFiction, icon: "🚀", },
+    { code: 53, category: "Thriller", image: thriller, icon: "🔪" },
+    { code: 10752, category: "War", image: war, icon: "⚔️" },
 ]
 export function Categories() {
-const darkTheme = useSelector((state)=> state.theme)
+    const darkTheme = useSelector((state) => state.theme)
 
     return (
         <section
