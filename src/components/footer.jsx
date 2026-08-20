@@ -28,36 +28,52 @@ export const Footer = React.memo(function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="mb-5 text-lg font-semibold ">
-                            Explore
-                        </h3>
+                        <h3 className="mb-5 text-lg font-semibold ">Explore</h3>
 
                         <ul className="space-y-3">
                             <li>
-                                <Link
+                                <NavLink
                                     to="/"
-                                    className="text-zinc-400 transition hover:text-red-500"
+                                    className={({ isActive }) =>
+                                        `font-medium transition ${
+                                            isActive
+                                                ? "text-red-500"
+                                                : "text-zinc-400 transition hover:text-red-500"
+                                        }`
+                                    }
                                 >
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
 
                             <li>
-                                <Link
-                                    to="/movies"
-                                    className="text-zinc-400 transition hover:text-red-500"
+                                <NavLink
+                                    to="/categories"
+                                    className={({ isActive }) =>
+                                        `font-medium transition ${
+                                            isActive
+                                                ? "text-red-500"
+                                                : "text-zinc-400 transition hover:text-red-500"
+                                        }`
+                                    }
                                 >
-                                    Movies
-                                </Link>
+                                    Categories
+                                </NavLink>
                             </li>
 
                             <li>
-                                <Link
-                                    to="/top-rated"
-                                    className="text-zinc-400 transition hover:text-red-500"
+                                <NavLink
+                                    to="/watchlist"
+                                    className={({ isActive }) =>
+                                        `font-medium transition ${
+                                            isActive
+                                                ? "text-red-500"
+                                                : "text-zinc-400 transition hover:text-red-500"
+                                        }`
+                                    }
                                 >
-                                    Top Rated
-                                </Link>
+                                    Watchlist
+                                </NavLink>
                             </li>
 
                             <li>
@@ -90,7 +106,9 @@ export const Footer = React.memo(function Footer() {
 
                             <li>
                                 <a
-                                    href="#"
+                                    href="https://github.com/Moksh-B"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-zinc-400 transition hover:text-red-500"
                                 >
                                     GitHub
@@ -100,6 +118,8 @@ export const Footer = React.memo(function Footer() {
                             <li>
                                 <a
                                     href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-zinc-400 transition hover:text-red-500"
                                 >
                                     About
@@ -109,27 +129,31 @@ export const Footer = React.memo(function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="mb-5 text-lg font-semibold ">
-                            Follow
-                        </h3>
+                        <h3 className="mb-5 text-lg font-semibold ">Follow</h3>
 
                         <div className="flex gap-4">
                             <a
-                                href="#"
+                                href="https://github.com/Moksh-B"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="rounded-full border border-zinc-700 p-3 transition hover:border-red-500 hover:bg-red-500"
                             >
                                 <FaGithub />
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/moksh-bajaj-895965310"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="rounded-full border border-zinc-700 p-3 transition hover:border-red-500 hover:bg-red-500"
                             >
                                 <FaLinkedin />
                             </a>
 
                             <a
-                                href="#"
+                                href="https://x.com/MokshB12"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="rounded-full border border-zinc-700 p-3 transition hover:border-red-500 hover:bg-red-500"
                             >
                                 <FaXTwitter />
