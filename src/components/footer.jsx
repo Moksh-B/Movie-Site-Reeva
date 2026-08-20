@@ -35,7 +35,7 @@ export const Footer = React.memo(function Footer() {
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        `font-medium transition ${
+                                        `transition ${
                                             isActive
                                                 ? "text-red-500"
                                                 : "text-zinc-400 transition hover:text-red-500"
@@ -50,7 +50,7 @@ export const Footer = React.memo(function Footer() {
                                 <NavLink
                                     to="/categories"
                                     className={({ isActive }) =>
-                                        `font-medium transition ${
+                                        `transition ${
                                             isActive
                                                 ? "text-red-500"
                                                 : "text-zinc-400 transition hover:text-red-500"
@@ -65,7 +65,7 @@ export const Footer = React.memo(function Footer() {
                                 <NavLink
                                     to="/watchlist"
                                     className={({ isActive }) =>
-                                        `font-medium transition ${
+                                        `transition ${
                                             isActive
                                                 ? "text-red-500"
                                                 : "text-zinc-400 transition hover:text-red-500"

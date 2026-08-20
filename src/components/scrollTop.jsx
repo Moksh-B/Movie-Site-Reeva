@@ -1,16 +1,18 @@
 import { useEffect } from "react"
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigationType } from "react-router-dom"
 
 export function ScrollToTop() {
     const { pathname } = useLocation()
+    const navigationType = useNavigationType()
 
     useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "instant",
-        })
-    }, [pathname])
+        // Don't reset scroll when using browser Back/Forward
+        if (navigationType === "POP") {
+            return
+        }
+
+        window.scrollTo(0, 0)
+    }, [pathname, navigationType])
 
     return null
 }
