@@ -1,6 +1,6 @@
 import { HiFilm, HiHeart } from "react-icons/hi2"
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import React from "react"
 import { useSelector } from "react-redux"
 
